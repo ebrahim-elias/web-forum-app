@@ -1,6 +1,6 @@
 body {
   min-height: 100vh;
-  background: linear-gradient(to right, #2c3e50, #3498db);
+  background-color: white;
 }
 
 .App {
@@ -24,4 +24,21 @@ body {
 
 .App-link {
   color: #09d3ac;
+}
+
+p.big-p {
+  font-size: 22pt;
+  font-weight: 400;
+}
+
+p.big-p::first-letter {
+  color: #dc4028;
+  font-size: 50pt;
+  font-weight: 600;
+}
+
+.card {
+  background-color: whitesmoke;
+  border: 2px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0;
 }

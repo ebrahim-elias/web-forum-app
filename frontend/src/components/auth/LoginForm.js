@@ -10,7 +10,6 @@ function LoginForm({onSubmit}) {
                 <h4 className="card-title" >Login</h4>
                 <div>
                     <div className="form-group">
-                        <label>Email:</label>
                         <input 
                             type="email"
                             className="form-control"
@@ -20,7 +19,6 @@ function LoginForm({onSubmit}) {
                     </div>
 
                     <div className="form-group">
-                        <label>Password:</label>
                         <input 
                             type="password" 
                             placeholder="Password" 
@@ -31,7 +29,7 @@ function LoginForm({onSubmit}) {
 
                     <div className="form-group">
                         <button 
-                            className="btn btn-info" 
+                            className="btn btn-danger"
                             onClick={() => onSubmit({email, password})}>
                             Login
                         </button>
