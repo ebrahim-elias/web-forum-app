@@ -2,7 +2,7 @@ import React from "react";
 
 function PostCard({post, onDeleteClick}) {
     return (
-        <div className="card mt-3">
+        <div className="card mt-3 row-3 overflow-auto">
             <div className="card-body">
                 <p>
                     {post.body}
