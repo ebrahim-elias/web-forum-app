@@ -11,7 +11,6 @@ function RegisterForm({onSubmit}) {
                 <h4 className="card-title">Sign up</h4>
                 <div>
                     <div className="form-group">
-                        <label>Name:</label>
                         <input 
                             type="text"
                             className="form-control"
@@ -21,7 +20,6 @@ function RegisterForm({onSubmit}) {
                     </div>
 
                     <div className="form-group">
-                        <label>Email:</label>
                         <input
                             type="email"
                             value={email}
@@ -31,7 +29,6 @@ function RegisterForm({onSubmit}) {
                     </div>
 
                     <div className="form-group">
-                        <label>Password:</label>
                         <input 
                             type="password" 
                             placeholder="Password" 
@@ -42,7 +39,7 @@ function RegisterForm({onSubmit}) {
 
                     <div className="form-group">
                         <button 
-                            className="btn btn-success"
+                            className="btn btn-danger"
                             onClick={e => onSubmit({name, email, password})}>
                             Create account
                         </button>
