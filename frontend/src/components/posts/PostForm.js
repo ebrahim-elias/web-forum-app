@@ -14,7 +14,7 @@ function PostForm({onSubmit}) {
     return (
         <div className="card">
             <div className="card-body">
-                <h4 className="card-title" >What's on your mind?</h4>
+                <h4 className="card-title" >Tell me a joke! Dad :)</h4>
                 <div>
                     <div className="form-group">
                         <textarea 
