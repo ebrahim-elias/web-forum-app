@@ -39,6 +39,7 @@ class PostsPage extends React.Component {
     }
 
 
+
     componentDidMount() {
         PostsApi.getAllPosts()
             .then(({data}) => this.setState({posts: data}))
@@ -53,8 +54,9 @@ class PostsPage extends React.Component {
                 <PostForm onSubmit={(postData) => this.createPost(postData)}/>
 
                 {posts.map(post => 
-                    <PostCard key={post.id} post={post} onDeleteClick={() => this.deletePost(post)}/>
+                    <PostCard key={post.id} post={post} onDeleteClick={() => this.deletePost(post)}/>   
                 )}
+                
             </div>
         );
     }
