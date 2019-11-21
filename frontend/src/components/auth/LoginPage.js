@@ -23,14 +23,13 @@ class LoginPage extends Component {
             <div className="wrapper">
                 <div className="container">
                     <div className="row mt-4">
-                        <div className="col-md-6 " style={{color: "white"}}>
-                            <h1>SDA 6</h1>
-                            <p>Starter template</p>
+                        <div className="col-md-6 ">
+                            <img src="logo192.png" alt="logo" />
+                            <p className="big-p">What’s the best way to tell a dad joke?</p>
                         </div>
-
                         <div className="col-md-6">
                             <div className="row">
-                                <div className="col-12  strong-shadow">
+                                <div className="col-12 strong-shadow">
                                     <LoginForm onSubmit={this.login} />
                                 </div>
 
