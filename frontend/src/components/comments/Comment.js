@@ -15,9 +15,9 @@ class Comment extends React.Component {
     }
  
     render() {
-        return <li key={this.props.key}>{this.props.comment}
-        <span className="badge badge-pill badge-danger mx-md-1" style={{cursor: "pointer"}} onClick={() => this.props.onDeleteClick()}> Delete</span>
-        </li>
+        return <ul class="list-group"> <li class="list-group-item"> {this.props.comment}
+        <span className="badge badge-pill badge-danger mx-md-2" style={{cursor: "pointer"}} onClick={() => this.props.onDeleteClick()}> Delete</span>
+        </li> </ul>
     }
 }
 export default Comment;

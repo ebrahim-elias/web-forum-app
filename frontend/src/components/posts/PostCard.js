@@ -17,8 +17,8 @@ class PostCard extends React.Component {
                    <p>
                        {this.props.post.body}
                    </p>
-                   <button className="btn btn-danger mx-md-1" onClick={() => this.props.onDeleteClick()}>Delete</button>
-                   <button className="btn btn-primary" onClick={() => {this.setState({isAddingComment:!isAddingComment})}}>Comment</button>
+                   <button className="btn btn-danger mx-md-2 btn-sm" onClick={() => this.props.onDeleteClick()}>Delete Post</button>
+                   <button className="btn btn-primary btn-sm" onClick={() => {this.setState({isAddingComment:!isAddingComment})}}>Comments</button>
                    {isAddingComment ? <CommentForm postid={this.props.post.id}/> : null}
                </div>
            </div>

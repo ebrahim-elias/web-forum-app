@@ -73,10 +73,10 @@ class CommentForm extends React.Component {
                            onChange={this.handleCommentChange}
                            value={this.state.comment}
                            />
-                   </div>
+                   </div> 
                    <div className="form-group">
                        <button
-                           className="btn btn-primary btn-sm"
+                           className="btn btn-primary btn-sm col-md-12"
                            onClick={this.handleComment}>
                            Post
                        </button>
