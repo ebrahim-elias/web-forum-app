@@ -1,6 +1,7 @@
 package se.kth.sda6.skeleton.posts;
 
 import org.hibernate.annotations.GeneratorType;
+import org.hibernate.validator.constraints.Length;
 import se.kth.sda6.skeleton.comments.Comment;
 
 import javax.persistence.*;
@@ -15,6 +16,8 @@ public class Post {
     @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
+    @Length(min = 1, max = 200, message = "It can not be empty!")
     @Column(name = "body")
     private String body;
 

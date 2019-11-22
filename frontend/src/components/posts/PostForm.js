@@ -26,7 +26,7 @@ function PostForm({onSubmit}) {
 
                     <div className="form-group">
                         <button 
-                            className="btn btn-primary" 
+                            className="btn btn-primary btn-sm col-md-12" 
                             onClick={handleSubmit}>
                             Post
                         </button>
